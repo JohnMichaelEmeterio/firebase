@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mb-5">
+        <h3 class="mb-3">Log In</h3>
+        <input type="text" placeholder="Username" id="userInp" class="form-control mb-3">
+        <input type="text" placeholder="Password" id="passInp" class="form-control mb-3">
+        <div class="form-check form-switch mb-3">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Keep me Logged In</label>
+        </div>
+        <button type="text" id="sub_btn" class="btn btn-outline-primary mb-3 w-100">Sign Up</button>
+        <a href="register.html"><span class="badge bg-secondary py-1 w-100">Want to Create A New Account?</span></a>
+    </div>
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
+      
+        const firebaseConfig = {
+            apiKey: "AIzaSyANbgo8c0rbSdjZu8UORbeL06iIIT6rx7w",
+            authDomain: "fir-b86f6.firebaseapp.com",
+            databaseURL: "https://fir-b86f6-default-rtdb.firebaseio.com",
+            projectId: "fir-b86f6",
+            storageBucket: "fir-b86f6.appspot.com",
+            messagingSenderId: "786526910108",
+            appId: "1:786526910108:web:c377e78349b93b7190df59"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        import {getDatabase, ref, set, child, get}
+         from "http://wwww.gstatic.com/firebasejs/9.12.1/firebase-database.js";
+
+         const db = getDatabase();
+    </script>
+</body>
+
+</html>
